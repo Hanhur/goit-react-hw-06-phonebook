@@ -16,6 +16,6 @@ const App = () => {
             <ContactList />
         </Layout>
     );
-};
+}
 
 export default App;
