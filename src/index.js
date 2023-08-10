@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { App } from 'components/App';
-import './components/Globalstyle.js';
+import App  from './components/App';
+import './components/Globalstyle';
 import { Provider } from 'react-redux';
-import { store, persistor } from 'redux/store.js';
+import { store, persistor } from 'redux/store';
 import { PersistGate } from 'redux-persist/integration/react';
 
 
