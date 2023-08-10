@@ -7,28 +7,28 @@ import { useDispatch } from 'react-redux';
 import { deleteContact } from '../../redux/contactsSlice';
 
 export const ContactItem = ({ contact: { id, name, number } }) => {
-  const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
-  return (
-    <ListItem>
-      <HiUser />
-      <ListItemName>
-        {name}: {number}
-      </ListItemName>
-      <DeleteButton
-        type="button"
-        id={id}
-        onClick={() => dispatch(deleteContact(id))}
-      >
-        <MdDelete />
-        Delete
-      </DeleteButton>
-    </ListItem>
-  );
-};
+    return (
+        <ListItem>
+            <HiUser />
+            <ListItemName>
+                {name}: {number}
+            </ListItemName>
+            <DeleteButton
+                type="button"
+                id={id}
+                onClick={() => dispatch(deleteContact(id))}
+            >
+                <MdDelete />
+                Delete
+            </DeleteButton>
+        </ListItem>
+    );
+}
 
 ContactItem.propTypes = {
-  id: PropTypes.string,
-  name: PropTypes.string,
-  number: PropTypes.string,
+    id: PropTypes.string,
+    name: PropTypes.string,
+    number: PropTypes.string,
 };

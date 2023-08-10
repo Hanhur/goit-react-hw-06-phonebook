@@ -6,16 +6,16 @@ import { Filter } from 'components/Filter/Filter.jsx';
 import { ContactList } from './ContactList/ContactList.jsx';
 
 const App = () => {
-  return (
-    <Layout>
-      <GlobalStyle />
-      <MainHeader>Phonebook</MainHeader>
-      <ContactsForm />
-      <Header>Contacts</Header>
-      <Filter />
-      <ContactList />
-    </Layout>
-  );
-};
+    return (
+        <Layout>
+            <GlobalStyle />
+            <MainHeader>Phonebook</MainHeader>
+            <ContactsForm />
+            <Header>Contacts</Header>
+            <Filter />
+            <ContactList />
+        </Layout>
+    );
+}
 
 export { App };
